@@ -1,0 +1,25 @@
+{
+	"name": "ds_outstage_job_trigger",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dbo.model_results.csv",
+				"folderPath": "ADLS/aadatamart/dbo/dbo.stage_job_trigger/2020-08-10",
+				"container": "adfv2tutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": "true",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

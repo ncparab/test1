@@ -1,0 +1,15 @@
+{
+	"name": "ds_in_model_results",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDbLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"typeProperties": {
+			"tableName": "dbo.model_results"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,7 @@
+{
+	"name": "DR-IntegrationRuntime",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Set up DR"
+	}
+}

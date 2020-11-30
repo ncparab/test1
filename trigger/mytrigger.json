@@ -1,0 +1,26 @@
+{
+	"name": "mytrigger",
+	"properties": {
+		"description": "My scheduler trigger",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copyPipeline_stage_job_trigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2020-06-24T01:00:00Z",
+				"endTime": "2020-06-24T01:56:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

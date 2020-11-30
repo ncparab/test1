@@ -1,0 +1,38 @@
+{
+	"name": "Model_trigger",
+	"properties": {
+		"description": "My scheduled trigger",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copyPipeline_model_results",
+					"type": "PipelineReference"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "copyPipeline_model_stage",
+					"type": "PipelineReference"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "copyPipeline_stage_job_trigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2020-08-10T00:00:00Z",
+				"endTime": "2020-08-15T08:45:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

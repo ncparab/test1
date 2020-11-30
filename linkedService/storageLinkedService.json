@@ -1,0 +1,12 @@
+{
+	"name": "storageLinkedService",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://chember.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlRFU1REQVRBRkFDVE9SWVBZU0RLXzRjOGNkMjdmLTljN2ItNDFjNy1hNzUwLTY3NDVkMDYxZTY1OCINCn0="
+		},
+		"annotations": []
+	}
+}

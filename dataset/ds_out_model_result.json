@@ -1,0 +1,16 @@
+{
+	"name": "ds_out_model_result",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "dbo.model_results.csv",
+			"folderPath": "adfv2tutorial"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

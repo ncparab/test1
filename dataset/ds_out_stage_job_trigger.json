@@ -1,0 +1,15 @@
+{
+	"name": "ds_out_stage_job_trigger",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"folderPath": "adfv2tutorial/output"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

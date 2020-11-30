@@ -1,0 +1,25 @@
+{
+	"name": "ds_outmodel_results",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dbo.model_results.csv",
+				"folderPath": "ADLS/aadatamart/dbo/dbo.model_results/2020-08-10",
+				"container": "adfv2tutorial"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": "true",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

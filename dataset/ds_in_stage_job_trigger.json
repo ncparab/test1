@@ -1,0 +1,15 @@
+{
+	"name": "ds_in_stage_job_trigger",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDbLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"typeProperties": {
+			"tableName": "dbo.stage_job_trigger"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
